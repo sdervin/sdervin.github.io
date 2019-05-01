@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>DASH DREAM Lab - Technology Pictures</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind+Guntur" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+
+    <a href="index.html"><img class="logo" src="sacredheart.jpg" alt="sacred heart logo"></a>
+      <nav>
+        <ul>
+          <a href="about.html"><li>About</li></a>
+          <a href="tech.html"><li>Technologies</li></a>
+          <a href="classes.html"><li>Classes</li></a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="audioareatwo.JPG" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="vivecloseup.JPG" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="dremel.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="embroiderytwo.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="lulzbottaz5.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="glowforgeslant.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="xcarvecloseup.JPG" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
